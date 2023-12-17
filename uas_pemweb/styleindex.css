@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Membagi tampilan menjadi tiga bagian */
+    min-height: 100vh;
+}
+
+header {
+    background-color: #314f70;
+    color: #fff;
+    padding: 10px 20px; /* Tambahkan padding pada kiri dan kanan */
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar,
+.navbar2 {
+    margin-left: 65rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar li,
+.navbar2 li {
+    display: inline-block;
+    margin-left: 28px;
+}
+
+.navbar a,
+.navbar2 a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu_akun {
+    margin-left: auto;
+}
+
+.akun p {
+    margin: 0;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Posisikan konten di tengah */
+    justify-content: center; /* Posisikan konten di tengah */
+}
+
+main h1 {
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: #0a0a0a;
+    font-weight: bold;
+    font-size: 30px;
+}
+main p {
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: #0a0a0a;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.main__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+    opacity: 0.4;
+}
+
+footer {
+    background-color: #314f70;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Additional Style for Hover Effect */
+.navbar a:hover,
+.navbar2 a:hover {
+    color: #ffcc00;
+}
